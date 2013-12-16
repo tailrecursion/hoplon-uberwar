@@ -1,0 +1,14 @@
+{:project         hello-world
+ :version         "0.0.1-SNAPSHOT"
+ :src-paths       #{"src"  "resources"}
+ :public     			"resources/public"
+ :output-dir			"resources/public"
+ :dependencies    [[tailrecursion/boot.core   "1.0.0"]
+                  [tailrecursion/boot.task "1.0.0"]
+                  [tailrecursion/hoplon "4.0.6"]                  
+                  [org.clojure/clojurescript "0.0-1934"]]
+ 
+ :require-tasks #{[tailrecursion.boot.task    :refer :all]
+                  [tailrecursion.hoplon.boot  :refer :all]}
+
+}
