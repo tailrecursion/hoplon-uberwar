@@ -1,7 +1,7 @@
 # Hoplon Uberjar Example
 
-An example project with tasks to help you package it up as an uberwar file and
-work locally during development.
+An example project that uses Hoplon and Castra, with tasks to help you package
+it up as an uberwar file or work locally during development.
 
 ## Usage
 
