@@ -27,7 +27,8 @@ you can start a local Jetty server:
 hello-world.core=> (def server (dev-server))
 ```
 
-Then open http://localhost:33333 in your browser. Have fun!
+Then open [http://localhost:33333](http://localhost:33333) in your browser. Have
+fun!
 
 ## License
 
