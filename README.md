@@ -25,10 +25,9 @@ you can start a local Jetty server:
 
 ```clojure
 hello-world.core=> (def server (dev-server))
-2014-01-20 18:13:11.968:INFO:oejs.Server:jetty-7.6.8.v20121106
-2014-01-20 18:13:12.005:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:33333
-#'hello-world.core/server
 ```
+
+Then open http://localhost:33333 in your browser. Have fun!
 
 ## License
 
