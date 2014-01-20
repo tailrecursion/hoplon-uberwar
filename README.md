@@ -1,6 +1,7 @@
-# hello-world
+# Hoplon Uberjar Example
 
-A Clojure library designed to ... well, that part is up to you.
+An example project with tasks to help you package it up as an uberwar file and
+work locally during development.
 
 ## Usage
 
