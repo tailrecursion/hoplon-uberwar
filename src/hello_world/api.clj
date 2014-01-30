@@ -5,5 +5,5 @@
 )
 
 (defn doit []
-  {:rpc [(allow)]}
+  {:rpc/pre [(allow)]}
   "This came from the server.")
