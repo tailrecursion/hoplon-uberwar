@@ -4,7 +4,7 @@
 
 (set-env!
   :dependencies '[[tailrecursion/boot.task   "2.0.0"]
-                  [tailrecursion/hoplon      "5.0.0"]
+                  [tailrecursion/hoplon      "5.1.1"]
                   [ring                      "1.2.0"]
                   [org.clojure/clojurescript "0.0-2138"]]
   :out-path     "resources/public"
