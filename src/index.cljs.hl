@@ -7,13 +7,15 @@
 (defc loading          nil)
 
 ;remotes
-(def ept (mkremote 'hello-world.api/doit state error loading))
+(def doit (mkremote 'hello-world.api/doit state error loading))
 
-(cell= (.log js/console (:trace error)))
+(with-init!
+  ; debug print errors to console
+  (cell= (.log js/console (:trace error))))
 
 (html
-  (head (title "Hello World"))
+  (head
+    (title "Hello World"))
   (body
-    (h1 "Hello World")
-    (h2 :do-text (cell= state))
-    (button :type "button" :on-click #(ept) "Click Me!")))
+    (p (code :text (cell= (str "The current time on the server is: " state))))
+    (button :click #(doit) :text (cell= (str (if state "Update" "Get") " time")))))
