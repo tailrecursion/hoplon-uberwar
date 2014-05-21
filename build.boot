@@ -1,12 +1,9 @@
 #!/usr/bin/env boot
 
-#tailrecursion.boot.core/version "2.0.0"
+#tailrecursion.boot.core/version "2.3.1"
 
 (set-env!
-  :dependencies '[[tailrecursion/boot.task   "2.0.0"]
-                  [tailrecursion/hoplon      "5.1.1"]
-                  [ring                      "1.2.0"]
-                  [org.clojure/clojurescript "0.0-2138"]]
+  :dependencies (read-string (slurp "deps.edn"))
   :out-path     "resources/public"
   :src-paths    #{"src"})
 
